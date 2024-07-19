@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Apply for <%= job.title %>
+    </title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="icon" type="image/png" href="/imgs/LOGO-S-transparent-icon-bck.png">
+</head>
+
+<body>
+    <div id="assessment-container">
+        <div id="inner-container">
+            <img src="/imgs/LOGO-transparent.png" alt="<%= job.company_logo %>" id="company-logo">
+            <h2>Apply for <%= job.title %>
+            </h2>
+            <form id="application-form" action="/submit-application" method="POST">
+                <input type="hidden" name="jobId" value="<%= job.id %>">
+                <div class="form-field">
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit">Apply Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Video Assessment</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body>
+    <div id="assessment-container">
+        <div id="inner-container">
+            <h2>Collect candidate details</h2>
+            <div class="form-field">
+                <label for="fullName">Enter your full name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Full Name">
+            </div>
+            <div class="form-field">
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-field">
+                <label for="cv">Upload your CV:</label>
+                <input type="file" id="cv" name="cv">
+            </div>
+            <div id="button-container">
+                <button id="next-button">Start Interview</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="application/json" id="exam-start-time-json">
+        {"startTime": "<%= examStartTime %>"} 
+    </script>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

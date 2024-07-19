@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Available Jobs</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="icon" type="image/png" href="/imgs/LOGO-S-transparent-icon-bck.png">
+</head>
+
+<body>
+    <div class="job-listing-container">
+        <ul>
+            <h1>Our Open Positions</h1>
+            <ul>
+                <% jobs.forEach(job=> { %>
+                    <li>
+                        <h2>
+                            <%= job.title %>
+                        </h2>
+                        <p>
+                            <%= job.description %>
+                        </p>
+                        <a href="/apply?jobId=<%= job.id %>">Apply Now</a>
+                    </li>
+                    <% }); %>
+            </ul>
+    </div>
+</body>
+
+</html>

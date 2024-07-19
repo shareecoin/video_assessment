@@ -1,0 +1,149 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://assets.api.uizard.io/api/cdn/stream/577d5bd9-e232-4973-9d0f-19ddaef9538d.png');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+#assessment-container {
+  width: 80%;
+  max-width: 400px; /* Adjusted to match the design */
+  margin: 50px auto; /* Adjusted to center vertically */
+  background-color: #a85252; /* Red background color */
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Adjust padding */
+  box-sizing: border-box;
+}
+
+#inner-container {
+  background-color: #fff; /* White background color for inner container */
+  padding: 20px;
+  border-radius: 18px;
+  padding-bottom: 30px; /* Add padding to the bottom */
+}
+
+h1, h2 {
+  color: #333; /* Default text color */
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Home Screen Styles */
+.form-field {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333; /* Default text color */
+  text-align: left; /* Align text to the left */
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-field input[type="text"]::placeholder,
+.form-field input[type="email"]::placeholder {
+  color: #bcbaba; /* Placeholder text color */
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: block;
+}
+
+.form-field input[type="file"] {
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.question-box {
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.question-box p {
+  margin-bottom: 15px;
+}
+
+/* Button Styles */
+button {
+  background-color: #800000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #660000;
+}
+
+button#submit-button {
+  background-color: #5cb85c;
+}
+
+button#submit-button:hover {
+  background-color: #4cae4c;
+}
+
+button#next-button, button#submit-button {
+  width: 150px;
+  height: 40px;
+  margin: 10px auto;
+  display: block;
+}
+
+button#next-button {
+  background-color: #c76767; /* Lighter red */
+}
+
+button#next-button:hover {
+  background-color: #a64545; /* Darker red on hover */
+}
+
+#button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#video-preview {
+  margin: 20px 0;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Video Assessment</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body>
+    <div id="assessment-container">
+        <div id="inner-container">
+
+            <div id="part-container"></div> <!-- This is the dynamic content area -->
+        </div>
+        <div id="button-container">
+            <button id="next-button">Start Interview</button>
+        </div>
+        <button id="submit-button" style="display: none;">Submit</button>
+    </div>
+
+    <!-- Add the hidden input fields -->
+    <input type="hidden" id="exam-link-id" value="<%= examLinkId %>">
+    <input type="hidden" id="candidate-email" value="<%= userEmail %>">
+
+    <script type="application/json" id="exam-start-time-json">
+        {"startTime": "<%= examStartTime %>"}
+    </script>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

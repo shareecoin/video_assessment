@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Video Assessment</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body>
+    <div id="assessment-container">
+        <h1>Video Assessment</h1>
+        <input type="hidden" id="exam-link-id" value="<%= examLinkId %>">
+        <input type="hidden" id="exam-start-time" value="<%= examStartTime %>">
+        <input type="hidden" id="candidate-email" value="<%= userEmail %>">
+        <div id="part-container">
+        </div>
+        <div id="button-container">
+            <button id="next-button" style="display: none;">Start</button>
+        </div>
+        <button id="submit-button">Submit</button>
+    </div>
+
+    <script type="application/json" id="exam-start-time-json">
+        {"startTime": "<%= examStartTime %>"} 
+    </script>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

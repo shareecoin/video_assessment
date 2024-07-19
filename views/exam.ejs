@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sharee Coin Video Assessments</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <!-- Add favicon link below -->
+    <link rel="icon" type="image/png" href="/imgs/LOGO-S-transparent-icon-bck.png">
+</head>
+
+<body>
+    <div id="assessment-container">
+        <div id="inner-container">
+            <div id="part-container">
+                <!-- The content for the current part of the assessment will be loaded here dynamically by script.js -->
+            </div>
+            <div id="button-container">
+                <button id="next-button">Start Interview</button>
+                <button id="submit-button" style="display:none;">Submit</button>
+                <!-- Ensure this button is hidden initially -->
+            </div>
+        </div>
+    </div>
+    <!-- Hidden inputs for exam link ID and candidate email -->
+    <input type="hidden" id="exam-link-id" value="<%= examLinkId %>">
+    <input type="hidden" id="candidate-email" value="<%= userEmail %>">
+    <script type="application/json" id="exam-start-time-json">
+        {"startTime": "<%= examStartTime %>"}
+    </script>
+
+    <script>
+        // Create a global JavaScript variable to store the userEmail
+        window.registeredEmail = '<%= userEmail %>'; 
+    </script>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-image: url('https://assets.api.uizard.io/api/cdn/stream/577d5bd9-e232-4973-9d0f-19ddaef9538d.png'); /* Add your image path */
+  background-size: cover;
+  background-position: center;
+}
+
+#assessment-container {
+  width: 80%;
+  max-width: 800px; /* Adjust this value for horizontal expansion */
+  margin: 50px auto; /* Adjusted to center vertically */
+  background-color: #a85252; /* Red background color */
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Adjust padding */
+  box-sizing: border-box;
+}
+
+#inner-container {
+  background-color: #fff; /* White background color for inner container */
+  padding: 20px;
+  border-radius: 18px;
+}
+
+h1, h2 {
+  color: #333; /* Default text color */
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Home Screen Styles */
+.form-field {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333; /* Default text color */
+  text-align: left; /* Align text to the left */
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-field input[type="text"]::placeholder,
+.form-field input[type="email"]::placeholder {
+  color: #bcbaba; /* Placeholder text color */
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: block;
+}
+
+.form-field input[type="file"] {
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+/* Video Interview Page Styles */
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.question-box {
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.question-box p {
+  margin-bottom: 15px;
+}
+
+/* Button Styles */
+button {
+  background-color: #800000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #660000;
+}
+
+button#submit-button {
+  background-color: #5cb85c;
+}
+
+button#submit-button:hover {
+  background-color: #4cae4c;
+}
+
+button#next-button, button#submit-button {
+  width: 150px;
+  height: 40px;
+  margin: 10px auto;
+  display: block;
+}
+
+button#next-button {
+  background-color: #c76767; /* Lighter red */
+}
+
+button#next-button:hover {
+  background-color: #a64545; /* Darker red on hover */
+}
+
+#button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#video-controls {
+  display: flex;
+  justify-content: space-around; /* Adjusts the spacing of buttons and timer */
+  margin-top: 20px;
+}
+
+#startRecording, #stopRecording {
+  flex: 1;
+  margin: 0 10px;
+}
+
+#timer {
+  flex: 0 1 100px;
+  text-align: center;
+}
+
+#video-preview {
+  margin: 20px 0;
+}
+
+#company-logo {
+  width: 100px;
+  height: auto;
+  border-radius: 0; /* Remove border-radius if it's a company logo */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+
+/* ... Your existing styles ... */
+
+/* Styles specifically for the job listings page */
+.job-listing-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-listing-container h1 { /* Targets h1 within .job-listing-container */
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px; /* Add spacing */
+}
+
+.job-listing-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.job-listing-container li {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.job-listing-container h2 { 
+  color: #2962ff; 
+  margin-bottom: 10px;
+}
+
+.job-listing-container a { 
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #2962ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.job-listing-container a:hover { 
+  background-color: #0039cb; 
+}
+
+.error-container {
+  background-color: #fff; /* White background */
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.error-container h1 {
+  color: #d32f2f; /* Red color for the heading */
+  margin-bottom: 15px;
+}
+
+.error-container p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.error-container a { /* Style the link */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2962ff; /* Blue background */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+
+.already-applied-container {
+  background-color: #fff; 
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.already-applied-container h1 {
+  color: #333; 
+  margin-bottom: 15px;
+}
+
+.already-applied-container p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.already-applied-container a { 
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2962ff; 
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.exam-expired-container {
+  background-color: #fff; 
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.exam-expired-container h1 {
+  color: #d32f2f; /* Red color for the heading */
+  margin-bottom: 15px;
+}
+
+.exam-expired-container p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.exam-expired-container a { 
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2962ff; /* Blue background */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
